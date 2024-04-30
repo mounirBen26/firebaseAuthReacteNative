@@ -44,7 +44,7 @@ const LoginScreen = () => {
         <TextInput 
         placeholder='Email'
         value={email}
-        onChangeText={text => setEmail(text)}
+        onChangeText={text => setEmail(text.trim())}
         style={styles.input}
         />
         <TextInput 
@@ -80,7 +80,7 @@ export default LoginScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightgray',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: 240,
     borderRadius: 6,
-    backgroundColor: 'white',
+    backgroundColor: 'lightgray',
     marginLeft: 12,
     margin:3,
     borderWidth: 1,
